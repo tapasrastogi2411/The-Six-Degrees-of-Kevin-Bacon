@@ -13,3 +13,6 @@ and a given actor (via shared movies). THis has been achieved using a specific d
 - To utilize Git, Gitflow, and Code Style correctly
 - Using enterprise design patterns, specifically dependency injection using Google Dagger2
 - Learning and applying CI/CD
+
+### TODO
+- Complete `AppTest.java` under `src/test/java/ca/utoronto/utm/mcs`
