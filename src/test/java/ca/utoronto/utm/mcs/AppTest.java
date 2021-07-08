@@ -1,6 +1,8 @@
 package ca.utoronto.utm.mcs;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.*;
 import org.junit.jupiter.api.Test;
 
 // Extra imported libraries for testing
@@ -11,6 +13,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
 import java.nio.charset.StandardCharsets;
 
 // TODO Please Write Your Tests For CI/CD In This Class. You will see these tests pass/fail on github under github actions.
@@ -48,7 +51,27 @@ public class AppTest {
 
         //Asserting whether the value we get is equal to the value that is expected, i.e., 200
         assertEquals(200, responseStatus);
+    }
 
+    // Testing for a 4XX error response code(here it will be a 404 error) for `addActor` method
+
+    @Before
+    public void setUp(){
 
     }
+
+
+    @Test
+    public void addActorFailure() throws JSONException{
+
+        // Creating the JSONObject for the request
+        JSONObject requestBody = new JSONObject();
+
+        /* Populating the created JSONObject with values.
+           The way we plan to test this is by adding an actor whose actorId already exists,
+           triggering a 404 response code */
+        requestBody.put("actorId", "10");
+    }
+
+
   }
