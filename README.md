@@ -22,6 +22,7 @@ and a given actor (via shared movies). THis has been achieved using a specific d
         - JRE - Version 16.0.1
     - Maven Version 3.6.3
     - Latest version of Neo4j Desktop
+    - [Postman, which is a very helpful tool to use to test your endpoints for basic behaviour](https://www.postman.com/products/)
 
 ### Building and running the project
 
@@ -48,9 +49,7 @@ and a given actor (via shared movies). THis has been achieved using a specific d
         - Right click the project → Maven Build…
         - Input compile `exec:java` in the Goals input box
         - You can now run the project by pressing the green play button
-
-
-
+        
 ### Completed Features
 
 - Server is up and running
