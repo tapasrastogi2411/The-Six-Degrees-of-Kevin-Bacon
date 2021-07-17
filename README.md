@@ -23,6 +23,34 @@ and a given actor (via shared movies). THis has been achieved using a specific d
     - Maven Version 3.6.3
     - Latest version of Neo4j Desktop
 
+### Building and running the project
+
+- The first step would be to clone the `master` branch of this repository and open the project in an IDE, either Intellij or Eclipse. Then you have the option of building and running your project from either your IDEs or the command line
+
+    - From the command line: 
+        - Install version of [Maven mentioned above](https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/)
+        - To compile your code simply run `mvn compile` in the root directory (the folder that has pom.xml)
+        - To run your code run `mvn: exec:java`
+
+    - Intellij:
+        - Import project
+        - Navigate to the project location
+        - Import the project from external model → Maven
+        - Next → Next → Next → Finish
+        - Add Configuration → (+) Button → Maven
+        - Name the configurations and input `exec:java` in the Command Line box
+        - Apply → Ok
+        - You can now run the project by pressing the green play button.
+
+    - Eclipse:
+        - File → Import → Maven → Existing Maven Projects
+        - Navigate to the project location
+        - Right click the project → Maven Build…
+        - Input compile `exec:java` in the Goals input box
+        - You can now run the project by pressing the green play button
+
+
+
 ### Completed Features
 
 - Server is up and running
