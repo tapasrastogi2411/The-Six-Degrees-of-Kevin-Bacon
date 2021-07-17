@@ -14,6 +14,15 @@ and a given actor (via shared movies). THis has been achieved using a specific d
 - Using enterprise design patterns, specifically dependency injection using Google Dagger2
 - Learning and applying CI/CD
 
+### Technologies and Applications needed for this project
+
+- You will need the following applications/technologies on your computer to run the project
+    - Latest Version of Java 
+        - JDK - Version 16.0.1
+        - JRE - Version 16.0.1
+    - Maven Version 3.6.3
+    - Latest version of Neo4j Desktop
+
 ### Completed Features
 
 - Server is up and running
